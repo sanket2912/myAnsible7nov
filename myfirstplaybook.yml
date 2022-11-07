@@ -6,7 +6,6 @@
     apt: 
      name: tree
      state: present
-    when: ansible_state_family='Redhat'
   - name: i want to install wget
     apt:
      name: wget
