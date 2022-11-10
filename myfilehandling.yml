@@ -11,3 +11,8 @@
     copy:
      src: my2ndfile.txt
      dest: /home/ubuntu/my2ndfile.txt
+  - name : install apache2 webserver
+    apt: 
+     name: apache2
+     state: present
+     
