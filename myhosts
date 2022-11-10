@@ -9,9 +9,3 @@
 [myDBservers]
 172.31.42.162
 172.31.24.112
-
-[mywebservers:vars]
-mywebpackonubuntu=apache2
-mywebpackonredhat=httpd
-myjavapackonubuntu=openjdk-8-jre
-myjavapackonredhat= java-1.8.0-openjdk
