@@ -1,0 +1,19 @@
+---
+- hosts: 54.196.170.42
+  become: yes
+  tasks:
+  - name: install git
+    apt:
+      name: git
+      state: present
+    when: ansible_os_family=='Debian'
+  - name: install wget
+    apt:
+     name: wget
+     state: present
+    when: ansible_os_family=='Debian'
+  - name: install tree
+    apt:
+     name: tree
+     state: present
+    when: ansible_os_family=='Debian'
