@@ -7,13 +7,16 @@
       name: git
       state: present
     when: ansible_os_family=='Debian'
+    tags: mygit
   - name: install wget
     apt:
      name: wget
      state: present
     when: ansible_os_family=='Debian'
+    tags: mywget
   - name: install tree
     apt:
      name: tree
      state: present
     when: ansible_os_family=='Debian'
+    tags: mytree
