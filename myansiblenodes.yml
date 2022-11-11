@@ -14,4 +14,4 @@
       assign_public_ip: yes
       region: us-east-1
       instance_tags:
-        name: ansiblenode0011
+        Name: ansiblenode0011
