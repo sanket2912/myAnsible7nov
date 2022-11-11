@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+  - name: create ansible nodes
+    ec2:
+    key_name: myVirginiaKey
+    instance_type: t2.micro
+    image: ami-08c40ec9ead489470
+    wait: yes
+    group: launch-wizard-2
+    count: 2
+    vpc_subnet_id: subnet-045f5bd95976d72c8
+    assign_public_ip: yes
+    region: us-east-1
+    instace_tags:
+      name: ansiblenode0011
